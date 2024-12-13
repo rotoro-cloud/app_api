@@ -4,6 +4,8 @@
 [ ! -f file-3.dat ] && dd if=/dev/zero of=file-3.dat bs=19000 count=1
 [ ! -f file-4.dat ] && dd if=/dev/zero of=file-4.dat bs=21000 count=1
 
+chmod +x manage.sh req.sh
+
 now=$(date +%s)
 end=$((now + 7200))
 
